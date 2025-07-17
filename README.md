@@ -73,4 +73,3 @@ SPRING_DATASOURCE_PASSWORD=your_secure_password
 - The `bankapp` application connects to the MySQL database using the `root` user by default. For production, consider creating a non-root user with limited privileges by adding `MYSQL_USER` and `MYSQL_PASSWORD` to the MySQL `Deployment` and updating the `bankapp` `Deployment` accordingly.
 - Configuration files are located in:
   - `src/main/resources/application.properties` for Spring Boot settings.
-  - `k8s/` for Kubernetes manifests (`bankapp-dep.yaml`, `bankapp-service.yaml`, `mysql-deployment.yaml`, `mysql-service.yaml`).
