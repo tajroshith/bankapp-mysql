@@ -81,7 +81,7 @@
 
         <repositories>
                 <repository>
-                <id>Proxy-repo</id>
+                <id>nexus-proxy</id>
                 <url>http://13.201.77.227:8081/repository/Proxy-repo/</url>
                 </repository>
         </repositories>
