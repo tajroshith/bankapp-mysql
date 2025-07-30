@@ -34,6 +34,14 @@
     		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
     		<sonar.language>java</sonar.language>
 	</properties>
+
+        <repositories>
+                <repository>
+                <id>nexus-proxy</id>
+                <url>http://13.201.77.227:8081/repository/Proxy-repo/</url>
+                </repository>
+        </repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -78,13 +86,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-        <repositories>
-                <repository>
-                <id>nexus-proxy</id>
-                <url>http://13.201.77.227:8081/repository/Proxy-repo/</url>
-                </repository>
-        </repositories>
 
 	<build>
 		<plugins>
