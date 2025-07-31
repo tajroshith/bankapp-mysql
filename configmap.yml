@@ -5,4 +5,4 @@ metadata:
   name: mysql-configmap
   namespace: webapps
 data:
-MYSQL_DATABASE: "bankappdb"
+  MYSQL_DATABASE: "bankappdb"
