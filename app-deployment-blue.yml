@@ -11,10 +11,11 @@ spec:
     matchLabels:
       app: bankapp
       version: blue
-  strategy: RollingUpdate
-  rollingUpdate:
-    maxUnavailable: 1
-    maxSurge: 1
+  strategy: 
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
   minReadySeconds: 10
   template:
     metadata:
